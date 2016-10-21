@@ -24,7 +24,7 @@ services:
         - 5432
 
   worker:
-    image: "buildbot/buildbot-worker:master"
+    image: "capitalaslash/buildbot-worker:latest"
     environment:
         BUILDMASTER: buildbot
         BUILDMASTER_PORT: 9989
